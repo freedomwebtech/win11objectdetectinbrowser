@@ -25,8 +25,8 @@ class VideoCamera(object):
     def get_frame(self):
         success, image = self.video.read()
         image=cv2.resize(image,(1020,500))
-        results=model(image)
-        image=np.squeeze(results.render())
+     
+       
         
 
         
